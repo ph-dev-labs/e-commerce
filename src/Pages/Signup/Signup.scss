@@ -13,7 +13,7 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+    box-shadow: 5px 0px 5px 5px rgba(0,0,0,0.75);
     border-radius: 10px;
 }
 
@@ -52,6 +52,8 @@ input {
     color: #fff;
     letter-spacing: 0.1em;
     background-color: black;
+    cursor: pointer;
+    border: none;
 }
 
 .login-link {
@@ -60,4 +62,9 @@ input {
     font-weight: 300;
     color: purple;
     cursor: pointer;
+}
+
+.btn-google {
+    margin: 20px;
+    background-color: palegreen;
 }
