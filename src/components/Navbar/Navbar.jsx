@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="links-cont">
         <Link to="/">Home</Link>
         <Link to="/shop">Shop</Link>
-        <Link to="/login">Login</Link>
+        <Link to="/signup">Sign up</Link>
       </div>
       <div className="cart-profile-cont">
         <div className="profile-cont">

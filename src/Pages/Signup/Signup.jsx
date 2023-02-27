@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "./Signup.scss";
-import { provider, auth } from "../../firebase/firebase";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
+
+  const navigate = useNavigate()
+
   const [userDetails, setUserDetails] = useState({
     firstName: "",
     lastName: "",
@@ -11,10 +14,7 @@ const Signup = () => {
     confirmPassword: "",
   });
 
-  const googleSign = () => {
-    auth.signInWithPopup(provider).catch((error) => alert(error.message));
-  };
-
+ 
   const handleChange = (event) => {
     const { name, value } = event.target;
     setUserDetails((prevState) => ({
@@ -104,9 +104,9 @@ const Signup = () => {
           />
         </div>
         <input type="submit" className="submit-btn" placeholder="Submit" />
-        <span className="login-link">Already have an account? Login</span>
+        <span className="login-link" onClick={() => navigate("/signin") }>Already have an account? Login</span>
       </form>
-      <button className="submit-btn btn-google" onClick={googleSign}>sign up with google</button>
+      
     </div>
   );
 };
