@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {signInWithGoogle} from "../../firebase/firebase";
+import { signInWithGoogle } from "../../firebase/firebase";
 import "./signin.scss";
 const Signin = () => {
   const [signin, setSigin] = useState({
@@ -22,12 +22,12 @@ const Signin = () => {
       email: "",
       password: "",
     });
-    
   };
 
   return (
     <div className="signin">
       <div className="form">
+        <h1 className="title-login">log in to TestedShop</h1>
         <div className="label-logic">
           <label htmlFor="email">Email :</label>
           <input

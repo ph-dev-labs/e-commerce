@@ -1,5 +1,5 @@
 import './App.css';
-import { useGetAllItemsQuery } from './Services/Services';
+import { useGetAllItemsQuery } from './Redux/Services/Services';
 import Navbar from './components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
 import Signup from './Pages/Signup/Signup';
